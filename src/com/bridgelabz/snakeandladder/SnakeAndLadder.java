@@ -58,9 +58,12 @@ public class SnakeAndLadder{
 				   break;
 			    
 			    currentposition=position;
-		    
+			    
+			    
 	    	}   
-				
+			
+	    	System.out.println("The No. of times the dice was rolled to Win the Game is "+count);
+		    
 	}
 	
 	public static int rollDice()
