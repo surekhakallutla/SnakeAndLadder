@@ -37,7 +37,8 @@ public class SnakeAndLadder{
 			    case 1:
 			    	
 			    	position = currentposition + DiceValue;
-			    	
+			    	if(position > 100)
+					position = currentposition;
 			    	System.out.println("The Player got Ladder and is at position "+position);
 			    	break;
 			    	
