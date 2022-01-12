@@ -17,33 +17,7 @@ public class SnakeAndLadder{
 		
 		System.out.println("The Dice Value is "+DiceValue);
 		
-		Random r = new Random();
-	    int opt =r.nextInt(3);
-	    
-	    switch(opt)
-	    {
-	    
-	    case 0:
-	    	
-	    	position = position;
-	    	System.out.println("The Player is not Playing and is at position "+position);
-	    	break;
-	    	
-	    case 1:
-	    	
-	    	position = position + DiceValue;
-	    	System.out.println("The Player got Ladder and is at position "+position);
-	    	break;
-	    	
-	    default:
-	    	
-	    	position = position - DiceValue;
-	    	if (position  < 0)
-	    		position = 0;
-	    	System.out.println("The Player got Snake and is at position "+position);
-	    	
-	    }
-	   
+		   
 				
 	}
 	
