@@ -2,7 +2,8 @@ package com.bridgelabz.snakeandladder;
 
 import java.util.Random;
 
-public class SnakeAndLadder{
+public class SnakeAndLadder
+{
 	
 	static int position = 0;
 	static int currentposition = 0;
