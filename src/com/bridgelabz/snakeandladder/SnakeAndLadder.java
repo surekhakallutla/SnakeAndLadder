@@ -5,16 +5,6 @@ import java.util.Random;
 public class SnakeAndLadder
 {
 	
-	static int position = 0;
-	static int currentposition = 0;
-	static int count = 1;
-	static final int Winposition = 100;
-	static int p1position = 0;
-	static int p2position = 0;
-	static int p1currentposition = 0;
-	static int p2currentposition = 0;
-	
-//	static int currentposition = 0;
 	static int count = 1;
 	static final int Winposition = 100;
 	static int p1position = 0;
@@ -58,17 +48,10 @@ public class SnakeAndLadder
 		
 		if(p1position > p2position)
 			System.out.println("Player 1 Won the Game");
-<<<<<<< HEAD
-		else if(p1position < p2position)
-			System.out.println("Player 2 Won the Game");
-		else
-			System.out.println("The match is Draw");
-		
-=======
+
 		else 
 			System.out.println("Player 2 Won the Game");
-				
->>>>>>> UC7SnakeAndLadderWith2Players
+
 	   System.out.println("The No. of times the dice was rolled to Win the Game is "+count);
 		    
 	}
@@ -87,7 +70,7 @@ public class SnakeAndLadder
 						
 			System.out.println("The Dice Value is "+DiceValue);
 			
-<<<<<<< HEAD
+
 			if(DiceValue == 6)
 			{
 				int a = rollDice();
@@ -95,9 +78,7 @@ public class SnakeAndLadder
 				System.out.println("The Dice Value is "+a);
 				DiceValue = DiceValue + a;
 			}
-			
-=======
->>>>>>> UC7SnakeAndLadderWith2Players
+
 			Random r = new Random();
 		    int opt = r.nextInt(3);
     
@@ -125,9 +106,7 @@ public class SnakeAndLadder
 		    	
 		    	if(p1position > Winposition)
 					p1position = p1currentposition;
-		    	
-				
-		    	
+		    			    	
 		    	break;
 		    	
 		    default:
@@ -149,7 +128,7 @@ public class SnakeAndLadder
 						
 			System.out.println("The Dice Value is "+DiceValue);
 			
-<<<<<<< HEAD
+
 			if(DiceValue == 6)
 			{
 				int b = rollDice();
@@ -158,8 +137,6 @@ public class SnakeAndLadder
 				DiceValue = DiceValue + b;
 			}
 			
-=======
->>>>>>> UC7SnakeAndLadderWith2Players
 			Random r = new Random();
 		    int opt = r.nextInt(3);
     
@@ -178,21 +155,12 @@ public class SnakeAndLadder
 		    	
 		    	System.out.println("The Player got Ladder and got chance to roll the dice again");
 		    	
-<<<<<<< HEAD
-		    	int x = rollDice();
-		    	System.out.println("The Dice Value is "+x);
-		    	
-		    	int p2extraposition = p2position + x;
-		    	
-		    	p2position = p2extraposition;
-=======
 		    	int y = rollDice();
 		    	System.out.println("The Dice Value is "+y);
 		    	
 		    	int p2extraposition = p2position + y;
-		    	
-		    	position = p2extraposition;
->>>>>>> UC7SnakeAndLadderWith2Players
+		    		    	
+		    	p2position = p2extraposition;
 		    	
 		    	if(p2position > Winposition)
 					p2position = p2currentposition;
